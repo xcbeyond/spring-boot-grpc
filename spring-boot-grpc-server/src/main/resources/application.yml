@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-boot-grpc-server
+server:
+  port: 10000
+grpc:
+  server:
+    port: 0
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://192.168.148.32:8761/eureka/
